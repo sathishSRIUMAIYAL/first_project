@@ -20,7 +20,7 @@
         <h1 style="text-align: center; color: white;">Wellcome All</h1>
         <hr style="color: white;">
         <div class="linka">
-            <a href="sigup.html" class="btn btn-warning text-white">SigUp</a>
+            <a href="index.html" class="btn btn-warning text-white">SigUp</a>
             <a href="login.html" class="btn btn-warning text-white">Login</a>
         </div>
 
@@ -32,19 +32,69 @@
         <hr style="color: white">
     </div>
 
-    <div id="ok" class="header">
-        <h2 style="text-align: center; color: white;">User List</h2>
-        <input type="text" id="Input" placeholder="Title..." style="width: 50%;border: none; border-bottom: solid red; padding: 10px; margin-bottom: 10px;">
-        <span onclick="newElement()" class="addBtn btn btn-primary">Add</span>
+    <div id="myDIV" class="header">
+        
+        <input style="border: none; border-bottom: solid red; width: 50%;padding: 10px; margin-bottom: 10px;" type="text" id="myInput" placeholder="Name" style="width: 50%;" >
+        <span onclick="newElement()" class="addBtn btn btn-primary" >Add</span>
       </div>
       
-      <ul id="list">
-        <li>SATHISHKUMAR <span class="btn btn-danger" onclick="remove()">x</span></li>
-        <li >UMAIYAL <span class="btn btn-danger" onclick="remove()">x</span></li>
-        <li>AADHINI <span class="btn btn-danger" onclick="remove()">x</span></li>
-        <li>AATHIRAN <span class="btn btn-danger" onclick="remove()">x</span></li>
+      <ul id="myUL">
+        <li>SATHISHKUMAR C</li>
+        <li>Umaiyal</li>
+ 
+        
       </ul>
-
+      
+      <script>
+   
+      var myNodelist = document.getElementsByTagName("LI");
+      var i;
+      for (i = 0; i < myNodelist.length; i++) {
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        myNodelist[i].appendChild(span);
+      }
+     
+      var close = document.getElementsByClassName("close");
+      var i;
+      for (i = 0; i < close.length; i++) {
+        close[i].onclick = function() {
+          var div = this.parentElement;
+          div.style.display = "none";
+        }
+      }
+      
+      
+      
+     
+      function newElement() {
+        var li = document.createElement("li");
+        var inputValue = document.getElementById("myInput").value;
+        var t = document.createTextNode(inputValue);
+        li.appendChild(t);
+        if (inputValue === '') {
+          alert("You must write something!");
+        } else {
+          document.getElementById("myUL").appendChild(li);
+        }
+        document.getElementById("myInput").value = "";
+      
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        li.appendChild(span);
+      
+        for (i = 0; i < close.length; i++) {
+          close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+          }
+        }
+      }
+      </script>
 
    
       
