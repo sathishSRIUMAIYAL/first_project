@@ -16,6 +16,7 @@ function validateInputs(){
     const usernameVAl=username.value.trim()
     const passwordVAl=password.value.trim()
     let success = true
+    
 
     if (usernameVAl===''){
         success=false
