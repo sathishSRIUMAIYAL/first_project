@@ -28,7 +28,7 @@ body{
     top: 50%;
     transform: translate(-50%,-50%);
     padding: 20px;
-    width: 600px;
+    width:60vw;
     background-color: whitesmoke;
     border-radius: 0px 50px 0px 50px;
     box-shadow: 10px 10px 5px black;
@@ -40,7 +40,7 @@ body{
     font-size: 16px;
     border-style: none;
     border-bottom-style: solid;
-    width: 500px;
+    width:45vw;
 }
 #two>h1{
     text-align: center;
@@ -56,7 +56,7 @@ input[type=submit]{
     border-radius: 15px;
     color: white;
     font-size: 20px;
-    width: 525px;
+    width: 40vw;
     margin-left: 30px;
     margin-top: 10px;
 }

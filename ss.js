@@ -58,10 +58,6 @@ function validateInputs(){
         success=false
         seterror(email,'Email is required')
     }
-    else if (!ValidateEmail(emailval)){
-        seterror(email,'please enter valid email')
-
-    }
     
     else{
         setsuccess(email)
@@ -94,10 +90,6 @@ function setsuccess (element,message){
 }
 
 
-function validateEmail(email) {
-  const res = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-  return res.test(String(email).toLowerCase());
-}
 
 
 
