@@ -142,5 +142,67 @@ label{
     border-color: red;
 }
 
+.input #listitem{
+    font-size: 100px;
+}
+ul li {
+    cursor: pointer;
+    padding: 10px;
+    list-style-type: none;
+    background:whitesmoke   ;
+    font-size: 18px;
+    transition: 0.2s;
+    width: 80%;
+    text-align: center;
+   
 
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+  }
+  ul li:hover {
+    background: #ddd;
+    display: block;
+  }
+  span{
+    
+    color:black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+   
+  }
+  span:hover{
+   color:red;
+
+  }
+  span{
+   position: absolute;
+   right: 11vw;
+    
+  }
+  #text{
+    border: none;
+    border-bottom: solid red;
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .inputf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+  }
+
+
+  
 

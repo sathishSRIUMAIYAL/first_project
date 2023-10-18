@@ -5,7 +5,6 @@ const password=document.querySelector('#password')
 
 
 
-
 form.addEventListener('submit',(e)=>{
     
     if(!validateInputs()){
@@ -65,11 +64,20 @@ function setsuccess (element,message){
 
 
 
+function newElement() {
+    var li = document.createElement("li");
+    var inputValue = document.getElementById("Input").value;
+    var t = document.createTextNode(inputValue);
+    li.appendChild(t);
+    if (inputValue === '') {
+      alert("Enter name!");
+    } else {
+      document.getElementById("list").appendChild(li);
+    }
+    document.getElementById("Input").value = "";
+}
 
-
-
-
-
-
-
-
+function remove(){
+    let ul =document.getElementById('list')
+    ul.removeChild(ul.child);
+}

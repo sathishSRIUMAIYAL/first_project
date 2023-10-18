@@ -94,14 +94,9 @@ function setsuccess (element,message){
 }
 
 
-function ValidateEmail(email) 
-{
- if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
-  {
-    return (true)
-  }
-    alert("You have entered an invalid email address!")
-    return (false)
+function validateEmail(email) {
+  const res = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  return res.test(String(email).toLowerCase());
 }
 
 
