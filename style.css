@@ -1,0 +1,146 @@
+*{
+    padding: 0px; margin: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: linear-gradient(blue,red);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin:0;font-family:'Times New Roman', Times, serif;
+    
+}
+.linka{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.linka a{
+    width: 30%;
+    margin: 10px;
+}
+#two{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    width: 600px;
+    background-color: whitesmoke;
+    border-radius: 0px 50px 0px 50px;
+    box-shadow: 10px 10px 5px black;
+}
+#three>input{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    border-style: none;
+    border-bottom-style: solid;
+    width: 500px;
+}
+#two>h1{
+    text-align: center;
+    color: blue;
+    text-decoration-line: underline;
+}
+input:focus{
+    outline: 0;
+}
+input[type=submit]{
+    background-color:tomato;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    width: 525px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+input[type=submit]:hover{
+    background-color:red;
+}
+a{
+    margin-left: 30px;
+    color:toma;
+}
+span{
+    font-size: 20px;
+}
+.error{
+    margin-left: 30px;
+    color: red;
+}
+#three.success input{
+    border-color:green;
+}
+#three.error input{
+    border-color:red;
+}
+
+body{
+    background-color: aliceblue;
+    background-image: linear-gradient(blue,red);
+    background-attachment: fixed;
+}
+.main{
+    border: 1px solid transparent;
+    background-color:whitesmoke;
+    width: 500px;
+    border-radius: 5px;
+    margin:20vh auto auto auto;
+    padding: 20px;
+}
+h1{
+    text-transform: uppercase;
+    color: blue;
+    text-align: center;
+}
+button{
+   background-color:red;
+   color: white;
+   border: 1px solid transparent;
+   padding:10px 30px;
+   margin: 20px 0;
+   width: 100%;
+   font-size: 30px;
+   cursor: pointer;
+   
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.user>input{
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 20px;
+    border-color:violet;
+    color: black;
+}
+.user input:focus{
+    outline: 0;
+}
+.error{
+    color: red;
+    font-size: 16px;
+
+}
+label{
+    color:green;
+    font-size: 25px;
+}
+.user.success input{
+    border-color: green;
+}
+.user.error input{
+    border-color: red;
+}
+
+
+
